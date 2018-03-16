@@ -13,7 +13,7 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 
 const gmailEmail = "towasoind@gmail.com";
-const gmailPassword = "gqnnbyrglyjpsxqh";
+const gmailPassword = "<**password**>"; // set the password
 const mailTransport = nodemailer.createTransport(
     `smtps://${gmailEmail}:${gmailPassword}@smtp.gmail.com`);
 
