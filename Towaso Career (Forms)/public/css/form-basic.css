@@ -1,0 +1,282 @@
+html{
+    background-color: #f3f3f3;
+}
+
+@media(min-width: 400px){
+
+  .left {
+  float: left;
+ width: 540px;
+  
+  margin: 2px 10px;
+  display: inline-block;
+ 
+}
+
+.right {
+     width: 540px;
+  float: left;
+ 
+  margin: 2px ;
+
+  display: inline-block;
+}
+
+}
+.form-basic{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 55px;
+    box-sizing: border-box;
+   display: inline-block;
+    background-color:  #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+ margin-right: 30px;
+   margin-left: 35px;
+   margin-top: 0px;
+    font: bold 14px sans-serif;
+    
+    border : 2px solid orange;
+}
+
+.form-basic .form-row{
+   
+    margin-bottom: 12px;
+}
+
+.form-basic .form-title-row{
+
+    margin-bottom: 36px;
+    background-color: orange;
+}
+
+/* The form title */
+
+.form-basic h1{
+    display: inline-block;
+    box-sizing: border-box;
+    color:  white;
+    font-size: 16px;
+    padding: 0 10px 15px 8px;
+    
+    padding-top: 10px;
+    background-color: green;
+    border-bottom: 3px solid rgb(0,216,142);
+    margin: 0 6px 0 8px;
+    cursor: pointer;
+}
+
+.form-basic h3{
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: orange;
+    color:  #4c565e;
+    font-size: 16px;
+    padding: 0 10px 15px 8px;
+   margin: 0 6px 0 8px;
+   cursor: pointer;
+   
+   
+}
+
+.form-basic .vacancies{
+    align-content: center;
+
+    background-color: #f0f0f0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 15%;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2 ; }
+tr:nth-child(odd){background-color: #d0dfdf}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* The form title */
+
+.form-basic .vacancies h2{
+    display: inline-block;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 10px 15px 8px;
+    padding-top: 10px;
+    background-color: rgb(0,216,142);
+    margin: 0 6px 0 8px;
+    cursor: pointer;
+}
+
+.form-basic .vacancies h4{
+    display: inline-block;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 10px 15px 8px;
+    padding-top: 10px;
+    background-color: green;
+    border-bottom: 3px solid orange;
+    margin: 0 6px 0 8px;
+    cursor: pointer;
+}
+
+.form-basic .form-row > label span{
+    display: inline-block;
+    box-sizing: border-box;
+    color: #5F5F5F;
+    width: 90%;
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 5px;
+}
+.form-basic input[type=textarea],
+.form-basic input{
+    color:  #5f5f5f;
+    box-sizing: border-box;
+    margin-right: 10%;
+    width: 95%;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+}
+
+
+.form-basic input[type=file]{
+    color:  #5f5f5f;
+    box-sizing: border-box;
+    width: 100%;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+}
+.form-basic input[type=radio],
+.form-basic input[type=checkbox]{
+    box-shadow: none;
+    width: auto;
+}
+
+.form-basic input[type=textarea]{
+    margin-top: 13px;
+    font-size: 22px;
+}
+
+textarea {
+    font-size: inherit;
+}
+
+.form-basic select{
+    background-color: #ffffff;
+    color:  #5f5f5f;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 95%;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px 8px;
+    border: 1px solid #dbdbdb;
+}
+
+.form-basic textarea{
+    color:  #5f5f5f;
+    box-sizing: border-box;
+    width: 100%;
+    height: 120px;
+    font-size: 20px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    font: normal 13px sans-serif;
+    padding: 12px;
+    border: 1px solid #dbdbdb;
+    resize: vertical;
+}
+
+.form-basic .form-radio-buttons{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.form-basic .form-radio-buttons > div{
+    margin-top: 10px;
+}
+
+.form-basic .form-radio-buttons label span{
+    margin-left: 8px;
+    color: #5f5f5f;
+    font-weight: normal;
+}
+
+.form-basic .form-radio-buttons input{
+    width: auto;
+}
+
+.form-basic button{
+    display: block;
+    border-radius: 2px;
+    background-color:  #6caee0;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 14px 22px;
+    border: 0;
+    
+}
+
+/*	Making the form responsive. Remove this media query
+    if you don't need the form to work on mobile devices. */
+
+@media (max-width: 300px) {
+
+    .form-basic{
+        padding: 30px;
+        max-width: 480px;
+        margin-left: 5%;
+    }
+
+    .form-basic .form-row{
+        max-width: 300px;
+        margin: 25px auto;
+        text-align: left;
+    }
+
+    .form-basic .form-title-row{
+        margin-bottom: 50px;
+        margin-bottom: 50px;
+        padding-left: 100px;
+    }
+
+    .form-basic .form-row > label span{
+        display: block;
+        text-align: left;
+        padding: 0 0 15px;
+    }
+
+    .form-basic select{
+        width: 95%;
+    }
+
+    .form-basic input[type=checkbox]{
+        margin-top:0;
+    }
+
+    .form-basic .form-radio-buttons > div{
+        margin: 0 0 10px;
+    }
+
+    .form-basic button{
+        margin: 0;
+    }
+
+}

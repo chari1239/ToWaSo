@@ -1,0 +1,14 @@
+{
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "dependencies": {
+    "express": "^3.0.0",
+    "express-handlebars": "^3.0.0",
+    "firebase-admin": "~4.2.1",
+    "firebase-functions": "^0.5.9",
+    "nodemailer" : "^4.0.1",
+    "google-cloud":"^0.48.0",
+    "stripe" : "^4.15.1"
+  },
+  "private": true
+}

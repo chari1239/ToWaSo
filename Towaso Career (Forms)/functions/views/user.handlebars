@@ -1,0 +1,255 @@
+{{#if user}}
+
+
+ <section id="bd" >
+  
+    
+        <div class="main-content">
+
+     
+        <form id="form" class="form-basic" method="post" action='/{{ user.posturl }}'>
+         
+
+          
+            <div class="form-title-row">
+               
+              
+              {{{user.department }}}
+
+              
+            </div>
+
+            {{#if user.data }}
+        
+             <div >
+
+               <table>
+
+                <thead>
+                  <th>Field </th>
+                  <th>Vacancies </th>
+                  <th>Salary (depends on your Talent and Experience) </th>
+
+                </thead>  
+                
+                {{#each user.data }}
+                  <tr>
+                   <td> {{ field}} </td>
+                   <td> {{ vacancies}} </td>
+                   <td> {{ salary}} </td>
+                   </tr>
+                {{/each}}
+                </table>
+              
+             </div>
+          
+           {{/if}}
+         
+         <div id="common" class="left">
+         
+
+
+              {{#if user.rd}}
+
+            <div class="form-row">
+                <label>
+
+                  {{{ user.rd }}}
+
+                 </label>
+            </div>  
+                {{/if}}
+
+            <div class="form-row">
+                <label>
+                    <span>Full name</span>
+                    <input type="text" name="name">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Email</span>
+                    <input type="email" name="email">
+                </label>
+            </div>
+
+             <div class="form-row">
+                <label>
+                    <span>Mobile</span>
+                    <input type="tel" maxlength="10"; name="mobile">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Degree</span>
+                    <select name="degree">
+                    <option></option>
+                    <option value="12th">12th Class</option>
+                    <option value="Under Graduate">Under Graduate</option>
+                    <option value="Graduate">Graduate</option>
+                    <option vallue="Post Graduarte">Post Graduarte</option>
+                    <option value="PHD">PHD</option>
+                    </select>
+                </label>
+            </div>
+
+ 
+            <div class="form-row">
+                <label>
+                    <span>Degree Pursuing/Completed</span>
+                 <select name="statusofDegree" id="status">
+                    <option></option>
+                    <option value="pursuing">Pursuing</option>
+                    <option value="completed">Completed</option>
+                </select>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span id="yearLabel">Year of Studying</span>
+                    <input type="text" maxlength="4" name="year">
+                </label>
+            </div>
+
+            <div id="experience" style ="display:none; " class="form-row">
+                <label>
+                    <span >Experience</span>
+                    <input type="text" name="experience">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Discipline</span>
+                    <input type="text" maxlength="30"  name="discipline">
+                </label>
+            </div>
+  
+
+             <div class="form-row">
+                <label>
+                    <span>Institute</span>
+                    <input type="text" name="institution">
+                </label>
+            </div>
+
+             
+            
+
+            </div>
+
+            <div id="other" class="right" >
+
+            <div class="form-row">
+                <label>
+                    <span>State</span>
+                     <select name="state" class="form-control"   >
+                      <option value=""></option>
+                      <option value="Andhra Pradesh">Andhra Pradesh</option>
+                      <option value="Arunacahl Pradesh">Arunacahl Pradesh</option>
+                      <option value="Assam">Assam</option>
+                      <option value="Bihar">Bihar </option>
+                      <option value="Chandigarh">Chandigarh </option>
+                      <option value="Chattisgarh">Chattisgarh</option>
+                      <option value="Dadra and Nager Haveli">Dadra and Nager Haveli</option>
+                      <option value="Daman and Diu">Daman and Diu </option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Goa">Goa</option>
+                      <option value="Gujarath">Gujarath</option>
+                      <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                      <option value="Jharkhand ">Jharkhand </option>
+                      <option value="Karnataka">Karnataka </option>
+                      <option value="Kerala">Kerala</option>
+                      <option value="Madhya Pradesh">Madhya Pradesh </option>
+                      <option value="Maharashtra">Maharashtra</option>
+                      <option value="Punjab">Punjab</option>
+                      <option value="Orissa">Orissa </option>
+                      <option value="Sikkim ">Sikkim </option>
+                      <option value="Tamilnadu">Tamilnadu</option>
+                      <option value="Telangana">Telangana</option>
+                      <option value="Tripura">Tripura</option>
+                      <option value="Uttar Pradesh">Uttar Pradesh</option>
+                      <option value="Uttarakhand">Uttarakhand</option>
+                      <option value="West Bengal">West Bengal</option>
+                     </select> 
+                </label>
+            </div>
+
+
+             <div class="form-row">
+                <label>
+                    <span>District</span>
+                    <input type="text" maxlength="30" name="district">
+                </label>
+            </div>
+         
+            
+
+               <div class="form-row">
+                <label >
+                    <span>Why do you think you are fit for this?</span>
+                    <textarea style="font-size:16px;" name="answer1" maxlength="200"></textarea>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>How do you think you will contribute to ToWaSo?</span>
+                    <textarea style="font-size:16px;" name="answer2" maxlength="200"></textarea>
+                </label>
+            </div>
+
+            
+         {{#if user.question}}
+             <div class="form-row">
+                <label>
+                
+                    <span>{{ user.question }}</span>
+                       <textarea style="font-size:16px;" name="answer3" maxlength="200"></textarea>
+                      
+                </label>
+            </div>
+          {{/if}} 
+            {{{ user.extraquestion }}}
+
+               <div class="form-row">
+                <label>
+                    <span>Upload Resume</span>
+                    <input id="file" type="file" name="file">
+                    <p id="progress"> </p>
+                </label>
+                </div>
+           <div style="display:none;"  class="form-row">
+                <label>
+                    <span>Resume</span>
+
+                    <input type="text" id="resumeURL" name="resumeURL">
+
+                </label>
+            </div>
+
+          
+           
+             <div class="form-row" >
+         
+                <button  type="submit">Submit</button>
+                
+            </div>
+            </div>
+    </form>
+
+   </div> 
+
+  </section> 
+
+   
+
+  
+
+{{/if}}
+
+
+
